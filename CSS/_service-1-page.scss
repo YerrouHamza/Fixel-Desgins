@@ -1,0 +1,146 @@
+
+
+
+/* styleng for Service 1 gallory */
+.main-services-1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    /* styleng for services 1 title */
+    .service-1-title{
+        font-size: 2.2rem;
+        color: $second-2-color;
+        opacity: .8;
+
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+    
+    
+    /* styleng for services page */
+    .service-1{
+        .content-service-1{
+            /* styleng for services 1 Gallory */
+            .service-1-gallory{
+                column-count: 3;
+                margin: 0 20px;
+                text-align: center;
+                padding-top: 20px;
+                .gird{
+                    div{
+                        margin: 30px 0;
+                        position: relative;
+                        cursor: pointer;
+                        overflow: hidden;
+                        transition: all 1s ease;
+
+                        img{
+                            width: 100%;
+                            transform: scale(1.1);
+                            transition: all .5s ease;
+
+                        }
+
+                        .photo-title{
+                            font-size: 1.2rem;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            background-color: rgba(255, 255, 255, .5);
+                            color: rgba(0, 0, 0, .7);
+                            width: 100%;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            padding: 5px 0 5px 5px;
+                            text-align: start;
+                            z-index: 1;
+                            opacity: 0;
+
+                            transition: all .5s ease;
+                        }
+
+                        &:hover{
+                            img{
+                                width: 100%;
+                                transform: scale(1.05);
+
+                            }
+
+                            .photo-title{
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .g-1{
+                        margin-top: 0;
+                    }
+                }
+                .last{
+                    box-shadow: none;
+                }
+            }
+        }
+        
+
+        /* styleng for footer */
+        .services-footer{
+            width: 100%;
+            height: 30px;
+            margin-top: 30px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            z-index: 2;
+
+            .copyreat-home{
+                width: 80%;
+                margin-left: 15px;
+                h4{
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    color: $second-2-color;
+                    opacity: .8;
+
+                    span{
+                        color: $primary-color;
+                    }
+
+                    span:nth-child(1){
+                        color: $primary-color;
+                    }
+                }
+
+            }
+    
+            /* styleng for social icons */
+            overflow: hidden;
+            .aside-social{
+                z-index: 3;
+                width: 20%;
+                .social-links{
+                    ul{
+                        display: flex;
+                        li{
+                            padding: 0 10px;
+                            a{
+                                color: $second-2-color;
+                                font-size: 1.2rem;
+                                &:hover{
+                                    color: $primary-color;
+                                }
+                
+                                transition: all .3s ease-in-out;
+                
+                                .icon{
+                                    width: 38px;
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
