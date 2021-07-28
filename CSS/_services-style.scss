@@ -17,25 +17,21 @@
     perspective: 600px;
 
     
+    // Styleng for Close Icon
+    .close-page-services{
+        opacity: 0;
+        transition: all .8 ease-in-out;
+    }
 
     /* styleng for out main services card */
-    .out-card{
-        opacity: 0;
-        z-index: 0;
-        transition: all .3s ease;
-    }
+    
     
     /* styleng for head page section*/
     .services-section{
-        overflow: hidden;
-        position: absolute;
-        top: 8%;
-        left: 8%;
-        width: 85%;
-        height: 85vh;
-        border-radius: 5px;
-        box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, .5);
-        z-index: -1;
+        opacity: .5;
+        transform: scale(0, 0);
+        transform-origin: top;
+        transition: all .5s ease;
 
         .services-titel{
             font-size: 3rem;
@@ -59,8 +55,9 @@
 
     /*-- Creat style for on page clik --*/
     &.active-services{
-        
         opacity: 1;
+        transform: scale(1, 1);
+
         z-index: 999;
 
 
@@ -71,7 +68,6 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            opacity: 1;
             transition: all .3s ease;
             background-color: rgba(255, 255, 255, .5);
             backdrop-filter: blur(1px);
@@ -80,6 +76,7 @@
 
         // Styleng for Close Icon
         .close-page-services{
+            opacity: 1;
             position: absolute;
             top: 11%;
             right: 9%;
@@ -111,6 +108,8 @@
             border-radius: 5px;
             box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, .5);
             z-index: 1;
+            opacity: 1;
+            transform: scale(1, 1);
 
             .services-titel{
                 font-size: 3rem;

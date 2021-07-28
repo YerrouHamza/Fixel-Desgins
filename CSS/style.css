@@ -67,29 +67,25 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
-  width: 25%;
+  width: 30%;
 }
 
-.header .nav-menu .nav-list .list-about,
-.header .nav-menu .nav-list .list-contact {
+.header .nav-menu .nav-list .list {
   padding-top: 10px;
 }
 
-.header .nav-menu .nav-list .list-about a,
-.header .nav-menu .nav-list .list-contact a {
+.header .nav-menu .nav-list .list a {
   color: white;
   font-size: 1rem;
   font-weight: 400;
 }
 
-.header .nav-menu .nav-list .list-about a:hover,
-.header .nav-menu .nav-list .list-contact a:hover {
+.header .nav-menu .nav-list .list a:hover {
   color: rgba(255, 255, 255, 0.911);
   position: relative;
 }
 
-.header .nav-menu .nav-list .list-about a:hover::before,
-.header .nav-menu .nav-list .list-contact a:hover::before {
+.header .nav-menu .nav-list .list a:hover::before {
   content: "";
   background-color: #0083b7;
   position: absolute;
@@ -665,24 +661,20 @@
   /*-- Creat style for on page clik --*/
 }
 
-.main-services .out-card {
+.main-services .close-page-services {
   opacity: 0;
-  z-index: 0;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all .8 ease-in-out;
+  transition: all .8 ease-in-out;
 }
 
 .main-services .services-section {
-  overflow: hidden;
-  position: absolute;
-  top: 8%;
-  left: 8%;
-  width: 85%;
-  height: 85vh;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.5);
-          box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.5);
-  z-index: -1;
+  opacity: .5;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .main-services .services-section .services-titel {
@@ -705,6 +697,8 @@
 
 .main-services.active-services {
   opacity: 1;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
   z-index: 999;
   /* styleng for out main services card */
   /* styleng for head page section*/
@@ -716,7 +710,6 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  opacity: 1;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   background-color: rgba(255, 255, 255, 0.5);
@@ -725,6 +718,7 @@
 }
 
 .main-services.active-services .close-page-services {
+  opacity: 1;
   position: absolute;
   top: 11%;
   right: 9%;
@@ -759,6 +753,9 @@
   -webkit-box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.5);
           box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.5);
   z-index: 1;
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 .main-services.active-services .services-section .services-titel {
@@ -862,7 +859,7 @@
 }
 
 /* Linkeng for services Section*/
-/* styleng for Service 1 gallory */
+/* styleng for Service 1 gallory page */
 .main-services-1 {
   width: 100%;
   height: 100%;
@@ -1017,4 +1014,6 @@
   width: 38px;
   padding: 10px;
 }
+
+/* styleng for if click in any photo */
 /*# sourceMappingURL=style.css.map */
