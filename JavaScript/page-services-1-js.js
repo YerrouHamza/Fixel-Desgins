@@ -36,6 +36,11 @@
                     //----- Get close icon from srevices page.
                     const ServicesCloseIcon = document.querySelector('#close-icon');
 
+    //- Get Services Gallory.
+    const servicesGallory = document.querySelector('.main-services-gallory');
+        //-- Get pictures 
+        const pictures = document.querySelector('.main-services-gallory .gird div');
+
 
 /** Add eventlistener **/
     /*
@@ -67,4 +72,13 @@
     })
     outCardServices.addEventListener('click', () => { // close click out card services.
         servicesMain.classList.remove('active-services');
+    })
+
+
+
+    /* samtying not work */
+    //- event listener in click open pictures from gallory.
+    pictures.addEventListener('click', () => {
+        pictures.classList.remove('picture');
+        pictures.classList.add('active');
     })

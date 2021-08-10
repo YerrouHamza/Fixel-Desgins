@@ -860,7 +860,7 @@
 
 /* Linkeng for services Section*/
 /* styleng for Service 1 gallory page */
-.main-services-1 {
+.main-services-gallory {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -869,7 +869,7 @@
   /* styleng for services page */
 }
 
-.main-services-1 .service-1-title {
+.main-services-gallory .service-title {
   font-size: 2.2rem;
   color: #ffffff;
   opacity: .8;
@@ -877,15 +877,15 @@
   padding-left: 20px;
 }
 
-.main-services-1 .service-1 {
+.main-services-gallory .service {
   /* styleng for footer */
 }
 
-.main-services-1 .service-1 .content-service-1 {
+.main-services-gallory .service .content-service {
   /* styleng for services 1 Gallory */
 }
 
-.main-services-1 .service-1 .content-service-1 .service-1-gallory {
+.main-services-gallory .service .content-service .service-gallory {
   -webkit-column-count: 3;
           column-count: 3;
   margin: 0 20px;
@@ -893,7 +893,28 @@
   padding-top: 20px;
 }
 
-.main-services-1 .service-1 .content-service-1 .service-1-gallory .gird div {
+.main-services-gallory .service .content-service .service-gallory .back-picture {
+  display: none;
+}
+
+.main-services-gallory .service .content-service .service-gallory .back-picture.active {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: rgba(201, 201, 201, 0.4);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird {
+  /* creat styleng for on click in any picturs */
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird .picture {
   margin: 30px 0;
   position: relative;
   cursor: pointer;
@@ -902,7 +923,12 @@
   transition: all 1s ease;
 }
 
-.main-services-1 .service-1 .content-service-1 .service-1-gallory .gird div img {
+.main-services-gallory .service .content-service .service-gallory .gird .picture div {
+  /* styleng for open icon*/
+  /* styleng for close icon */
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird .picture div img {
   width: 100%;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -910,11 +936,11 @@
   transition: all .5s ease;
 }
 
-.main-services-1 .service-1 .content-service-1 .service-1-gallory .gird div .photo-title {
+.main-services-gallory .service .content-service .service-gallory .gird .picture div .photo-title {
   font-size: 1.2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #0083b7;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -927,26 +953,118 @@
   transition: all .5s ease;
 }
 
-.main-services-1 .service-1 .content-service-1 .service-1-gallory .gird div:hover img {
-  width: 100%;
+.main-services-gallory .service .content-service .service-gallory .gird .picture div .open {
+  display: inline-block;
+  position: absolute;
+  bottom: 6px;
+  right: 15px;
+  font-size: 1rem;
+  color: #0083b7;
+  z-index: 22;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out;
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird .picture div .open:hover {
+  color: #212121;
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird .picture div .close {
+  display: none;
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird .picture div:hover {
+  /* styleng for open icon*/
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird .picture div:hover img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.main-services-1 .service-1 .content-service-1 .service-1-gallory .gird div:hover .photo-title {
+.main-services-gallory .service .content-service .service-gallory .gird .picture div:hover .photo-title {
+  opacity: .8;
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird .picture div:hover .open {
   opacity: 1;
 }
 
-.main-services-1 .service-1 .content-service-1 .service-1-gallory .gird .g-1 {
+.main-services-gallory .service .content-service .service-gallory .gird .g-1 {
   margin-top: 0;
 }
 
-.main-services-1 .service-1 .content-service-1 .service-1-gallory .last {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.main-services-gallory .service .content-service .service-gallory .gird.active .active {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 5rem;
+  z-index: 100;
 }
 
-.main-services-1 .service-1 .services-footer {
+.main-services-gallory .service .content-service .service-gallory .gird.active .active div {
+  position: relative;
+  /* styleng for open icon*/
+  /* styleng for close icon */
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird.active .active div img {
+  max-height: 70vh;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird.active .active div .photo-title {
+  width: 100%;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  font-size: 1.8rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: start;
+  color: #0083b7;
+  opacity: .8;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px 0 5px 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird.active .active div .open {
+  display: none;
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird.active .active div .close {
+  display: inline-block;
+  position: absolute;
+  bottom: -44px;
+  right: 15px;
+  font-size: 1.8rem;
+  color: #0083b7;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.main-services-gallory .service .content-service .service-gallory .gird.active .active div .close:hover {
+  color: #212121;
+}
+
+.main-services-gallory .service .services-footer {
   width: 100%;
   height: 30px;
   margin-top: 30px;
@@ -965,52 +1083,52 @@
   overflow: hidden;
 }
 
-.main-services-1 .service-1 .services-footer .copyreat-home {
+.main-services-gallory .service .services-footer .copyreat-home {
   width: 80%;
   margin-left: 15px;
 }
 
-.main-services-1 .service-1 .services-footer .copyreat-home h4 {
+.main-services-gallory .service .services-footer .copyreat-home h4 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #ffffff;
   opacity: .8;
 }
 
-.main-services-1 .service-1 .services-footer .copyreat-home h4 span {
+.main-services-gallory .service .services-footer .copyreat-home h4 span {
   color: #0083b7;
 }
 
-.main-services-1 .service-1 .services-footer .copyreat-home h4 span:nth-child(1) {
+.main-services-gallory .service .services-footer .copyreat-home h4 span:nth-child(1) {
   color: #0083b7;
 }
 
-.main-services-1 .service-1 .services-footer .aside-social {
+.main-services-gallory .service .services-footer .aside-social {
   z-index: 3;
   width: 20%;
 }
 
-.main-services-1 .service-1 .services-footer .aside-social .social-links ul {
+.main-services-gallory .service .services-footer .aside-social .social-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-services-1 .service-1 .services-footer .aside-social .social-links ul li {
+.main-services-gallory .service .services-footer .aside-social .social-links ul li {
   padding: 0 10px;
 }
 
-.main-services-1 .service-1 .services-footer .aside-social .social-links ul li a {
+.main-services-gallory .service .services-footer .aside-social .social-links ul li a {
   color: #ffffff;
   font-size: 1.2rem;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
-.main-services-1 .service-1 .services-footer .aside-social .social-links ul li a:hover {
+.main-services-gallory .service .services-footer .aside-social .social-links ul li a:hover {
   color: #0083b7;
 }
 
-.main-services-1 .service-1 .services-footer .aside-social .social-links ul li a .icon {
+.main-services-gallory .service .services-footer .aside-social .social-links ul li a .icon {
   width: 38px;
   padding: 10px;
 }
