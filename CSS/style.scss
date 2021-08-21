@@ -12,11 +12,15 @@
 
 
 /* add variablrs */
+$primary-color: #0083b7;
+$primary-2-color: hsla(197, 100%, 36%, 0.9);
+$primary-3-color: hsla(197, 100%, 36%, 0.8);
+$primary-4-color: hsla(197, 100%, 36%, 0.7);
 
 $second-color: #212121;
-$primary-color: #0083b7;
 $second-2-color: #ffffff;
 
+/* Body Style */
 
 
 /* Linkeng Pages*/
@@ -37,9 +41,14 @@ $second-2-color: #ffffff;
     /* Linkeng for about Section*/
 @import "./_about-style.scss";
 
+    /* Linkeng for about Section*/
+@import "./_contact-page.scss";
+
 
     /* Linkeng for services Section*/
 @import "./_services-style.scss";
-
-    /* Linkeng for services Section*/
+    /*-- linking style for services pages --*/
+        /* Linkeng for services Section */
     @import "./_service-1-page.scss";
+
+

@@ -9,16 +9,9 @@
         //-- Get Button mune.
         const menuButton = document.querySelector('.header .nav-button-menu');
 
+
     //- Get menu Elements.
     const menuSection = document.querySelector('.menu-section');
-
-    //- Get home elements.
-    const homeMain = document.querySelector('.home');
-
-    //- Get about elements.
-    const aboutMain = document.querySelector('.main-about');
-        //-- Get Button View Work
-        const aboutButton = document.querySelector('.main-about .about-section .about .button-about');
 
 
     //- Get services elements.
@@ -35,11 +28,6 @@
                 const services1Page = document.querySelector('.main-services .service-1');
                     //----- Get close icon from srevices page.
                     const ServicesCloseIcon = document.querySelector('#close-icon');
-
-    //- Get Services Gallory.
-    const servicesGallory = document.querySelector('.main-services-gallory');
-        //-- Get pictures 
-        const pictures = document.querySelector('.main-services-gallory .gird div');
 
 
 /** Add eventlistener **/
@@ -75,10 +63,3 @@
     })
 
 
-
-    /* samtying not work */
-    //- event listener in click open pictures from gallory.
-    pictures.addEventListener('click', () => {
-        pictures.classList.remove('picture');
-        pictures.classList.add('active');
-    })

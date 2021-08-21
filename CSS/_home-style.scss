@@ -7,6 +7,8 @@
     height: 100vh;
     background-color: $second-color;
     z-index: 22;
+
+    scroll-snap-type: y mandatory;
     /** scroll class for scroll event **/
     &.scroll-1{
 

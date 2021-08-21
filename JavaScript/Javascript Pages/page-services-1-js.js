@@ -36,6 +36,16 @@
                     //----- Get close icon from srevices page.
                     const ServicesCloseIcon = document.querySelector('#close-icon');
 
+    //- Get Services Gallory.
+    const servicesGallory = document.querySelector('.main-services-gallory');
+        //-- Get back picture after click
+        const picturesBack = document.querySelector('.main-services-gallory .back-picture');
+        //-- Get head pictures 
+        const headPictures = document.querySelector('.main-services-gallory .gird');
+            let pictures = Array.from(headPictures.children); // Get all pictures
+            let picturesNumber = [...Array(pictures.length).keys()]; // Get number pictures
+            //--- Get Close Icone.
+            // let closePicture = document.querySelector('.main-services-gallory .gird div .close');
 
 /** Add eventlistener **/
     /*
@@ -61,9 +71,6 @@
     menuViewWorkBT.addEventListener('click', () => { // from Header.
         servicesMain.classList.add('active-services');
     });
-    aboutButton.addEventListener('click', () => { // From About Page.
-        servicesMain.classList.add('active-services');
-    });
         // For Close Services Page.
     servicesCloseIcon.addEventListener('click', () => { // close use close Button.
         servicesMain.classList.remove('active-services');
@@ -73,25 +80,49 @@
     })
 
 
-/** Add Function **/
 
-    //- creat onScroll for scroll bitwen home page and services page
-onscroll = () => {
+    /* samtying not work */
+    //- event listener in click open pictures from gallory.
+   
+    // creat open and close picture
+    pictures.forEach( picture => {
+        
+        // creat open picture by ues forEach.
+        picture.children[0].children[0].addEventListener('click', () => {
+            picture.classList.remove('picture');
+            picture.classList.add('active');
+            headPictures.classList.add('active');
+            picturesBack.classList.add('active');
+        });
 
-    if (scrollY > 80){
-        homeMain.classList.add('scroll-1');
-    } else {
-        homeMain.classList.remove('scroll-1');
-    }
+        picture.children[0].children[3].addEventListener('click', () => {
+            console.log('0');
+            picture.classList.remove('picture');
+            picture.classList.add('active');
+            headPictures.classList.add('active');
+            picturesBack.classList.add('active');
+        });
+        
+        // creat close picture by ues forEach.
+            // ues backpicture for close picture
+        picturesBack.addEventListener('click', () => {
+            console.log('1');
+            picture.classList.add('picture');
+            picture.classList.remove('active');
+            headPictures.classList.remove('active');
+            picturesBack.classList.remove('active');
+        });
 
-    if (scrollY > 600){
-        header.classList.add('on-about-page');
-        headerLogo.setAttribute('src', "/photos/Bilal Logo - 2.png");
-    } else {
-        header.classList.remove('on-about-page');
-        headerLogo.setAttribute('src', "/photos/Bilal Logo.png");
-    }
-}
+            // ues close icone for close picture
+        picture.children[0].children[2].addEventListener('click', () => {
+            console.log('2');
+            picture.classList.add('picture');
+            picture.classList.remove('active');
+            headPictures.classList.remove('active');
+            picturesBack.classList.remove('active');
+        });
 
-    //- creat on scrol page about go to top
+    });
+    
 
+console.log(closePicture);

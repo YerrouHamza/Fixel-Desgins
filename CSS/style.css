@@ -9,6 +9,7 @@
 }
 
 /* add variablrs */
+/* Body Style */
 /* Linkeng Pages*/
 /* linkeng for header*/
 /* styleng for header Bilal WebSite */
@@ -218,6 +219,8 @@
   height: 100vh;
   background-color: #212121;
   z-index: 22;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   /** scroll class for scroll event **/
 }
 
@@ -640,6 +643,329 @@
   color: #212121;
 }
 
+/* Linkeng for about Section*/
+body {
+  background-color: black;
+  color: white;
+}
+
+/* styleng for contact page */
+.main-contact {
+  width: 100vw;
+  height: 80vh;
+  margin-top: 4rem;
+}
+
+.main-contact .head-contact-page {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-contact .head-contact-page .head-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0083b7;
+  margin-bottom: 5px;
+  opacity: .9;
+}
+
+.main-contact .head-contact-page .head-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: .5;
+}
+
+.main-contact .card-contact-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-contact .card-contact-page .contact-card {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(128, 128, 128, 0.15);
+          box-shadow: 0px 0px 20px 1px rgba(128, 128, 128, 0.15);
+}
+
+.main-contact .card-contact-page .contact-card .left-card {
+  width: 35%;
+  background-color: rgba(0, 132, 184, 0.7);
+  padding: 20px 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .head-left-card {
+  text-align: start;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .head-left-card .card-title {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .head-left-card .card-text {
+  font-size: .8rem;
+  line-height: 1.5;
+  color: #ffffff;
+  padding-right: 20px;
+  opacity: .7;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .contact-info {
+  line-height: 3;
+  z-index: 2;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .contact-info .info .icon {
+  font-size: 1.2rem;
+  color: #212121;
+  margin-right: 20px;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .contact-info .info .text-info {
+  font-size: .95rem;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: .9;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .contact-social {
+  margin-top: 100px;
+  z-index: 1;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .contact-social .social-links {
+  width: 40%;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .contact-social .social-links .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .contact-social .social-links .links a {
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: .8;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .contact-social .social-links .links a:hover {
+  color: #212121;
+  opacity: 1;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .left-card-backgouand {
+  z-index: 0;
+  position: relative;
+}
+
+.main-contact .card-contact-page .contact-card .left-card .left-card-backgouand img {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  opacity: .5;
+  width: 200px;
+}
+
+.main-contact .card-contact-page .contact-card .right-card {
+  width: 75%;
+  margin: 20px 25px;
+  z-index: 1;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .client-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .client-info div {
+  margin-bottom: 20px;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .client-info div label {
+  font-size: .75rem;
+  opacity: .75;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .client-info div input {
+  width: 20rem;
+  height: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: none;
+  padding-left: 5px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .client-info div input:focus {
+  border-bottom: 1px solid rgba(0, 132, 184, 0.7);
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .client-info .main-first-name {
+  width: 50%;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .client-info .main-last-name {
+  width: 50%;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .client-info .main-email {
+  width: 50%;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .client-info .main-phone {
+  width: 50%;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .services-select-content .service-select-title {
+  font-size: .95rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 15px;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .services-select-content .select-content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .services-select-content .select-content div {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .services-select-content .select-content div input {
+  width: 20px;
+  cursor: pointer;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .services-select-content .select-content div label {
+  font-size: .9rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .message {
+  margin-bottom: 30px;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .message label {
+  font-size: .75rem;
+  padding-bottom: 5px;
+  opacity: .75;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .message .contact-message {
+  width: 100%;
+  height: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: none;
+  padding-top: 10px;
+  padding-left: 5px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  resize: none;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .message .contact-message:focus {
+  border-bottom: 1px solid rgba(0, 132, 184, 0.7);
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .main-submit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .main-submit .contact-form-submit {
+  font-size: .95rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 132, 184, 0.8);
+  padding: 12px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.main-contact .card-contact-page .contact-card .right-card .contact-form .main-submit .contact-form-submit:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #0083b7;
+}
+
+/* styleng for footer */
+.contact-footer {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  overflow: hidden;
+}
+
+.contact-footer .copyreat-contact h4 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+  opacity: .75;
+}
+
+.contact-footer .copyreat-contact h4 span {
+  color: #0083b7;
+}
+
+.contact-footer .copyreat-contact h4 span:nth-child(1) {
+  color: #0083b7;
+}
+
 /* Linkeng for services Section*/
 /* styleng for Services Section */
 .main-services {
@@ -663,8 +989,28 @@
 
 .main-services .close-page-services {
   opacity: 0;
-  -webkit-transition: all .8 ease-in-out;
-  transition: all .8 ease-in-out;
+  position: absolute;
+  top: 13%;
+  right: 11%;
+  z-index: 2;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.main-services .close-page-services .icon {
+  font-size: 2rem;
+  color: #ffffff;
+  opacity: .9;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.main-services .close-page-services .icon:hover {
+  color: #0083b7;
+  opacity: 1;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
 }
 
 .main-services .services-section {
@@ -712,46 +1058,29 @@
   height: 100vh;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  background-color: rgba(255, 255, 255, 0.5);
+  -moz-background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.25);
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
 }
 
 .main-services.active-services .close-page-services {
   opacity: 1;
-  position: absolute;
-  top: 11%;
-  right: 9%;
-  z-index: 2;
-}
-
-.main-services.active-services .close-page-services .icon {
-  font-size: 2rem;
-  color: #ffffff;
-  opacity: .9;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
-}
-
-.main-services.active-services .close-page-services .icon:hover {
-  color: #0083b7;
-  opacity: 1;
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
 }
 
 .main-services.active-services .services-section {
   overflow: hidden;
   position: absolute;
-  top: 8%;
-  left: 8%;
-  width: 85%;
-  height: 85vh;
-  background-color: #212121;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80vh;
+  -moz-background-color: rgba(255, 255, 255, 0.45);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.5);
-          box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.5);
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.3);
+          box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.3);
   z-index: 1;
   opacity: 1;
   -webkit-transform: scale(1, 1);
@@ -858,7 +1187,8 @@
   opacity: .9;
 }
 
-/* Linkeng for services Section*/
+/*-- linking style for services pages --*/
+/* Linkeng for services Section */
 /* styleng for Service 1 gallory page */
 .main-services-gallory {
   width: 100%;
@@ -873,8 +1203,21 @@
   font-size: 2.2rem;
   color: #ffffff;
   opacity: .8;
+  margin-bottom: 10px;
   padding-top: 100px;
   padding-left: 20px;
+  position: relative;
+}
+
+.main-services-gallory .service-title::before {
+  content: "";
+  width: 5.2rem;
+  height: 5px;
+  background-color: #0083b7;
+  position: absolute;
+  top: 140px;
+  left: 15%;
+  opacity: .8;
 }
 
 .main-services-gallory .service {
@@ -885,15 +1228,8 @@
   /* styleng for services 1 Gallory */
 }
 
-.main-services-gallory .service .content-service .service-gallory {
-  -webkit-column-count: 3;
-          column-count: 3;
-  margin: 0 20px;
-  text-align: center;
-  padding-top: 20px;
-}
-
 .main-services-gallory .service .content-service .service-gallory .back-picture {
+  cursor: pointer;
   display: none;
 }
 
@@ -906,11 +1242,16 @@
   height: 100vh;
   z-index: 99;
   background-color: rgba(201, 201, 201, 0.4);
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .main-services-gallory .service .content-service .service-gallory .gird {
+  max-width: 100vw;
+  -webkit-column-count: 3;
+          column-count: 3;
+  margin: 0 20px;
+  padding-top: 20px;
   /* creat styleng for on click in any picturs */
 }
 
@@ -994,12 +1335,13 @@
   opacity: 1;
 }
 
-.main-services-gallory .service .content-service .service-gallory .gird .g-1 {
+.main-services-gallory .service .content-service .service-gallory .gird .first-p {
   margin-top: 0;
 }
 
 .main-services-gallory .service .content-service .service-gallory .gird.active .active {
-  width: 100vw;
+  width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1010,12 +1352,22 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
-  top: 5rem;
+  text-align: center;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
 
 .main-services-gallory .service .content-service .service-gallory .gird.active .active div {
   position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 25px 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.3);
+          box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.3);
   /* styleng for open icon*/
   /* styleng for close icon */
 }
@@ -1036,7 +1388,11 @@
   text-align: start;
   color: #0083b7;
   opacity: .8;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.3);
+          box-shadow: 0px 0px 12px 5px rgba(61, 61, 61, 0.3);
   padding: 5px 0 5px 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1062,6 +1418,8 @@
 
 .main-services-gallory .service .content-service .service-gallory .gird.active .active div .close:hover {
   color: #212121;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
 }
 
 .main-services-gallory .service .services-footer {
@@ -1132,6 +1490,4 @@
   width: 38px;
   padding: 10px;
 }
-
-/* styleng for if click in any photo */
 /*# sourceMappingURL=style.css.map */

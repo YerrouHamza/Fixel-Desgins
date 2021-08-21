@@ -1,0 +1,339 @@
+
+body{
+    background-color: black;
+    color: white;
+
+}
+
+
+/* styleng for contact page */
+.main-contact{
+    width: 100vw;
+    height: 80vh;
+    margin-top: 4rem;
+    // styleng for head contact page.
+    .head-contact-page{
+        text-align: center;
+        margin-bottom: 40px;
+        //- style for title.
+        .head-title{
+            font-size: 2rem;
+            font-weight: 800;
+            color: $primary-color;
+            margin-bottom: 5px;
+            opacity: .9;
+        }
+        //- styleng for text.
+        .head-text{
+            font-size: 1rem;
+            font-weight: 500;
+            color: $second-2-color;
+            opacity: .5;
+        }
+    }
+
+    // styleng for card contact page.
+    .card-contact-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        // styleng for card
+        .contact-card{
+            width: 85%;
+            display: flex;
+            padding: 8px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 1px rgba(128, 128, 128, 0.15);
+            
+            //- styleng for left card.
+            .left-card{
+                width: 35%;
+                background-color: $primary-4-color;
+                padding: 20px 25px;
+                border-radius: 10px;
+                overflow: hidden;
+                z-index: 1;
+                //-- styleng for head left card.
+                .head-left-card{
+                    text-align: start;
+                    margin-bottom: 50px;
+                    z-index: 2;
+
+                    //--- styleng for title.
+                    .card-title{
+                        color: white;
+                        margin-bottom: 10px;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                    }
+                    
+                    //--- styleng for text
+                    .card-text{
+                        font-size: .8rem;
+                        line-height: 1.5;
+                        color: $second-2-color;
+                        padding-right: 20px;
+                        opacity: .7;
+                    }
+                }
+
+                //-- styleng for contact info.
+                .contact-info{
+                    line-height: 3;
+                    z-index: 2;
+
+                    //--- styleng for info list.
+                    .info{
+                        //---- styleng for icon.
+                        .icon{
+                            font-size: 1.2rem;
+                            color: $second-color;
+                            margin-right: 20px;
+                        }
+
+                        //---- styleng for text info.
+                        .text-info{
+                            font-size: .95rem;
+                            font-weight: 500;
+                            color: $second-2-color;
+                            opacity: .9;
+                        }
+                    }
+                }
+
+                //-- styleng for social media.
+                .contact-social{
+                    margin-top: 100px;
+                    z-index: 1;
+                    .social-links{
+                        width: 40%;
+                        .links{
+                            display: flex;
+                            justify-content: space-between;
+
+                            a{
+                                font-size: 1rem;
+                                color: $second-2-color;
+                                opacity: .8;
+                                align-items: flex-end;
+                                transition: all .3s ease-in;
+
+                                &:hover{
+                                    color: $second-color;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                
+                .left-card-backgouand{
+                    z-index: 0;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        bottom: -50px;
+                        right: -50px;
+                        opacity: .5;
+                        width: 200px;
+                    }
+                }
+            }
+            
+            //- styleng for right card.
+            .right-card{
+                width: 75%;
+                margin: 20px 25px;
+                z-index: 1;
+
+                //-- styleng for contact form.
+                .contact-form{
+
+                    //--- styleng for client info.
+                    .client-info{
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-bottom: 15px;
+
+                        //---- styleng for all
+                        div{
+                            margin-bottom: 20px;
+
+                            //----- styleng for text
+                            label{
+                                font-size: .75rem;
+                                opacity: .75;
+                            }
+
+                            //----- styleng for input
+                            input{
+                                width: 20rem;
+                                height: 2rem;
+                                color: rgba(255, 255, 255, 0.9);
+                                background: none;
+                                padding-left: 5px;
+                                border: none;
+                                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                                outline: none;
+
+                                &:focus{
+                                    border-bottom: 1px solid $primary-4-color;
+
+                                }
+                            }
+                        }
+
+                        //---- styleng for first name input.
+                        .main-first-name{
+                            width: 50%;
+                        }
+
+                        //---- styleng for last name input.
+                        .main-last-name{
+                            width: 50%;
+                        }
+
+                        //---- styleng for email input.
+                        .main-email{
+                            width: 50%;
+                        }
+
+                        .main-phone{
+                            width: 50%;
+                        }
+
+                    }
+                    
+                    //--- styleng for Select Services Content
+                    .services-select-content{
+                        
+                        //---- styleng for title.
+                        .service-select-title{
+                            font-size: .95rem;
+                            font-weight: 600;
+                            color: rgba(255, 255, 255, 0.9);
+                            margin-bottom: 15px;
+                        }
+
+                        //---- styleng for content select.
+                        .select-content{
+                            width: 80%;
+                            display: flex;
+                            justify-content: start;
+                            flex-wrap: wrap;
+                            margin-bottom: 20px;
+                            
+                            //-----
+                            div{
+                                padding-left: 15px;
+                                padding-bottom: 10px;
+
+                                //------ styleng for input radio.
+                                input{
+                                    width: 20px;
+                                    cursor: pointer;
+                                }
+
+                                //------ styleng fpr text.
+                                label{
+                                    font-size: .9rem;
+                                    font-weight: 400;
+                                    color: rgba(255, 255, 255, 0.7);
+                                }
+                            }
+                        }
+                    }
+
+                    //--- styleng for message write.
+                    .message{
+                        margin-bottom: 30px;
+
+                        //----- styleng for text
+                        label{
+                            font-size: .75rem;
+                            padding-bottom: 5px;
+                            opacity: .75;
+                        }
+
+                        //----- styleng for input
+                        .contact-message{
+                            width: 100%;
+                            height: 2.5rem;
+                            color: rgba(255, 255, 255, 0.9);
+                            background: none;
+                            padding-top: 10px;
+                            padding-left: 5px;
+                            border: none;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                            outline: none;
+                            resize: none;
+
+                            &:focus{
+                                border-bottom: 1px solid $primary-4-color;
+
+                            }
+                        }
+                    }
+
+                    //--- styleng for submit button.
+                    .main-submit{
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        .contact-form-submit{
+                            font-size: .95rem;
+                            font-weight: 600;
+                            color: rgba(255, 255, 255, 0.9);
+                            background-color: $primary-3-color;
+                            padding: 12px 15px;
+                            cursor: pointer;
+                            border: none;
+                            border-radius: 5px;
+                            transition: all .5s ease-in-out;
+
+                            &:hover{
+                                background-color: rgba(255, 255, 255, .9);
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/* styleng for footer */
+.contact-footer{
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    
+    overflow: hidden;
+    .copyreat-contact{            
+        h4{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: $second-2-color;
+            opacity: .75;
+
+            span{
+                color: $primary-color;
+            }
+
+            span:nth-child(1){
+                color: $primary-color;
+            }
+        }
+
+    }
+}
