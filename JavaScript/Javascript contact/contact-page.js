@@ -63,3 +63,9 @@
     })
 
 
+  
+
+
+const radioV = document.querySelector('input[name="services"]:checked');
+
+console.log(radioV);

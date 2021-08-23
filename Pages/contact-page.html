@@ -10,7 +10,7 @@
 
     <!--linkeng css styleng-->
     <link rel="stylesheet" href="/CSS/style.css">
-    <title>Bilal</title>
+    <title>Contact - Fixel Desgins</title>
 </head>
 <body>
 
@@ -25,10 +25,10 @@
             </div>
             <ul class="nav-list">
                 <li class="list-home list">
-                    <a href="#home-page">Home</a>
+                    <a href="/index.html#home-page">Home</a>
                 </li>
                 <li class="list-about list">
-                    <a href="#about-page">About</a>
+                    <a href="/index.html#about-page">About</a>
                 </li>
                 <li class="list-contact list">
                     <a href="/Pages/contact-page.html">Contact</a>
@@ -45,7 +45,7 @@
         </div>
     </header>
 
-    <!-- creat mobile menu section -->
+    <!-- creat mobile menu section 
     <section class="menu-section">
         <div class="menu-content">
             <nav>
@@ -66,7 +66,7 @@
             </nav>
         </div>
     </section>
-
+    -->
 
 
 
@@ -105,7 +105,7 @@
                         <!-- contact Email -->
                         <div class="info email">
                             <i class="fas fa-envelope icon"></i>
-                            <span class="text-info">hello@bilalfixel.com</span>
+                            <span class="text-info">hello@fixeldesigns.com</span>
                         </div>
                         <!-- contact info -->
                         <div class="info adres">
@@ -151,7 +151,7 @@
     
                 <!-- Creat right Contact Card -->
                 <div class="right-card">
-                    <form action="" class="contact-form">
+                    <form action="javascript:sendEmail()" class="contact-form" name="contact_form">
     
                         <!-- Creat client info input content -->
                         <div class="client-info">
@@ -187,39 +187,39 @@
     
                             <div class="select-content">
                                 <!-- Creat Select For Service 1-->
-                                <div class="main-service-1">
-                                    <input type="radio" name="services" id="service-number-1" value="service-number-1">
-                                    <label for="service-number-1" class="service 1" >Service number 1</label>
+                                <div class="ui-design">
+                                    <input type="radio" name="services" id="ui-design" value="ui-design">
+                                    <label for="ui-design" class="service 1" >UI Design</label>
                                 </div>
     
                                 <!-- Creat Select For Service 2-->
-                                <div class="main-service-2">
-                                    <input type="radio" name="services" id="service-number-2" value="service-number-2">
-                                    <label for="service-number-2" class="service 2" >Service number 2</label>
+                                <div class="printable-designs">
+                                    <input type="radio" name="services" id="printable-designs" value="printable-designs">
+                                    <label for="printable-designs" class="service 2" >Printable Designs</label>
                                 </div>
     
                                 <!-- Creat Select For Service 3-->
-                                <div class="main-service-3">
-                                    <input type="radio" name="services" id="service-number-3" value="service-number-3">
-                                    <label for="service-number-3" class="service 3" >Service number 3</label>
+                                <div class="social-media-design">
+                                    <input type="radio" name="services" id="social-media-design" value="social-media-design">
+                                    <label for="social-media-design" class="service 3" >Social Media design</label>
                                 </div>
     
                                 <!-- Creat Select For Service 4-->
-                                <div class="main-service-4">
-                                    <input type="radio" name="services" id="service-number-4" value="service-number-4">
-                                    <label for="service-number-4" class="service 4" >Service number 4</label>
+                                <div class="branding">
+                                    <input type="radio" name="services" id="branding" value="branding">
+                                    <label for="branding" class="service 4" >Branding</label>
                                 </div>
     
                                 <!-- Creat Select For Service 5-->
-                                <div class="main-service-5">
-                                    <input type="radio" name="services" id="service-number-5" value="service-number-5">
-                                    <label for="service-number-5" class="service 5" >Service number 5</label>
+                                <div class="logo-design">
+                                    <input type="radio" name="services" id="logo-design" value="logo-design">
+                                    <label for="logo-design" class="service 5" >Logo Design</label>
                                 </div>
     
                                 <!-- Creat Select For Service 6-->
-                                <div class="main-service-6">
-                                    <input type="radio" name="services" id="service-number-6" value="service-number-6">
-                                    <label for="service-number-6" class="service 6" >Service number 6</label>
+                                <div class="web-divelopment">
+                                    <input type="radio" name="services" id="web-divelopment" value="web-divelopment">
+                                    <label for="web-divelopment" class="service 6" >Web Divelopment</label>
                                 </div>
     
                                 <!-- Creat Select For other-->
@@ -238,7 +238,7 @@
     
                         <!-- Creat send button -->
                         <div class="main-submit">
-                            <input type="submit" value="Send Message" class="contact-form-submit">
+                            <input type="submit" value="Send Message" class="contact-form-submit" onclick="sendEmail()">
                         </div>
                     </form>
                 </div>
@@ -273,47 +273,58 @@
             <h3 class="services-titel">Services</h3>
             <div class="services-content">
                 <div class="services">
-                    <a href="/Pages/page-service-1.html" class="services-card card1">
-                        <i class="fas fa-pencil-alt icon"></i>
-                        <h3 class="title">Desgin & Web Desgin</h3>
+                    <a href="/Pages/UI Design Service.html" class="services-card card1">
+                        <i class="fas fa-paint-brush icon"></i> <i class="fas fa-desktop icon"></i>
+                        <h3 class="title">UI Design</h3>
                         <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, iure.</p>
                     </a>
 
                     <a href="#" class="services-card card2">
-                        <i class="fas fa-pencil-alt icon"></i>
-                        <h3 class="title">Desgin & Web Desgin</h3>
+                        <i class="fas fa-pencil-ruler icon"></i>
+                        <h3 class="title">Printable Designs</h3>
                         <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, iure.</p>
                     </a>
 
                     <a href="#" class="services-card card3">
-                        <i class="fas fa-pencil-alt icon"></i>
-                        <h3 class="title">Desgin & Web Desgin</h3>
+                        <i class="fas fa-share-alt-square icon"></i>
+                        <h3 class="title">Social Media design</h3>
                         <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, iure.</p>
                     </a>
                     <a href="#" class="services-card card4">
-                        <i class="fas fa-pencil-alt icon"></i>
-                        <h3 class="title">Desgin & Web Desgin</h3>
+                        <i class="fas fa-barcode icon"></i>
+                        <h3 class="title">Branding</h3>
                         <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, iure.</p>
                     </a>
 
                     <a href="#" class="services-card card5">
-                        <i class="fas fa-pencil-alt icon"></i>
-                        <h3 class="title">Desgin & Web Desgin</h3>
+                        <i class="fas fa-laptop-code icon"></i>
+                        <h3 class="title">Web Divelopment</h3>
                         <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, iure.</p>
                     </a>
 
                     <a href="#" class="services-card card6">
-                        <i class="fas fa-pencil-alt icon"></i>
-                        <h3 class="title">Desgin & Web Desgin</h3>
+                        <i class="fas fa-icons icon"></i>
+                        <h3 class="title">Logo Design</h3>
                         <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, iure.</p>
                     </a>
                 </div>
             </div>
         </section>
     </main> 
-
-
+    
     <!-- Lenking for JavaScript -->
-    <script src="/JavaScript/Javascript Pages/contact-page.js"></script>
+    <script src="/JavaScript/Javascript contact/contact-page.js"></script>
+
+    <!-- Lenking for jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Lenking send mail from smtpJS.com -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <!-- Lenking send mail JavaScript -->
+        <script src="/JavaScript/Javascript contact/send-email.js">
+        </script>
+
+
+
 </body>
 </html>

@@ -12,13 +12,24 @@
 
 
 /* add variablrs */
-$primary-color: #0083b7;
-$primary-2-color: hsla(197, 100%, 36%, 0.9);
-$primary-3-color: hsla(197, 100%, 36%, 0.8);
-$primary-4-color: hsla(197, 100%, 36%, 0.7);
+    // color variablrs
+        //- primary color
+    $primary-color: #0083b7;
+    $primary-2-color: hsla(197, 100%, 36%, 0.9);
+    $primary-3-color: hsla(197, 100%, 36%, 0.8);
+    $primary-4-color: hsla(197, 100%, 36%, 0.7);
+    $primary-5-color: hsla(197, 100%, 36%, 0.6);
+    $primary-6-color: hsla(197, 100%, 36%, 0.5);
+    $primary-7-color: hsla(197, 100%, 36%, 0.4);
+    $primary-8-color: hsla(197, 100%, 36%, 0.3);
+    $primary-9-color: hsla(197, 100%, 36%, 0.2);
+    $primary-10-color: hsla(197, 100%, 36%, 0.1);
 
-$second-color: #212121;
-$second-2-color: #ffffff;
+        //- second color
+    $second-color: #212121;
+
+        //- therst color
+    $second-2-color: #ffffff;
 
 /* Body Style */
 
@@ -41,14 +52,14 @@ $second-2-color: #ffffff;
     /* Linkeng for about Section*/
 @import "./_about-style.scss";
 
-    /* Linkeng for about Section*/
+    /* Linkeng for contact page*/
 @import "./_contact-page.scss";
 
 
-    /* Linkeng for services Section*/
-@import "./_services-style.scss";
+    /* Linkeng for services Section */
+@import "./_services-style/";
     /*-- linking style for services pages --*/
         /* Linkeng for services Section */
-    @import "./_service-1-page.scss";
+    @import "./_services-pages-style.scss";
 
 
